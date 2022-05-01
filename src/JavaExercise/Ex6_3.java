@@ -30,3 +30,19 @@ class Card {
     static int width = 100;
     static int height = 250;
 }
+
+/* 객체배열
+Tv[] tvArr = new Tv[3]; 길이가 3인 Tv타입의 참조변수 배열 생성. 이 객체 배열은 3개의 '객체의 주소'를 저장할 수 있다.
+tvArr[0] = new Tv();
+tvArr[1] = new Tv();
+tvArr[2] = new Tv();  *객체를 생성해서 배열의 각 요소에 저장! 잊으면 안 됨!
+배열의 초기화 블록을 사용하면, 위의 세 줄을 한 줄로 간단히 할 수 있다.
+Tv[] tvArr = { new Tv(), new Tv(), new Tv() };
+
+**객체의 수가 많을 때는 for문 사용도 가능 ㅇㅇ
+Tv[] tvArr = new Tv[100];
+
+for (int i=0; i<tvArr.length; i++) {
+      tvArr[i] = new Tv();
+}
+ */
