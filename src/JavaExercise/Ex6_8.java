@@ -4,7 +4,7 @@ class Data3 { int x; }
 public class Ex6_8 {
     public static void main(String[] args) {
         Data3 d = new Data3();
-        d.x = 10;
+        d.x = 20;
 
         Data3 d2 = copy(d);
         System.out.println("d.x ="+d.x);

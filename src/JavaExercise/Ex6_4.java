@@ -12,6 +12,12 @@ public class Ex6_4 {
         System.out.println("subtract(5L, 3L) = " + result2);
         System.out.println("multiply(5L, 3L) = " + result3);
         System.out.println("divide(5L, 3L) = " + result4);
+        System.out.println();
+
+        Gugudan gugu = new Gugudan();
+        gugu.print99danAll();
+//      구구단 출력하기 성공!
+
     }
 }
 
@@ -24,4 +30,19 @@ class MyMath {
     long subtract(long a, long b) { return a - b; }
     long multiply(long a, long b) { return a * b; }
     double divide(double a, double b) { return a / b; }
+}
+
+class Gugudan {
+    void print99danAll() {
+        for(int i=1;i<=9;i++) {
+            for(int j=2;j<=9;j++) {
+                System.out.print(j+"*"+i+"="+(j*i)+" ");
+            }
+            System.out.println();
+        }
+        return;
+        /*반환타입이 void이므로 생략가능. 컴파일러가 자동추가
+          반환값이 있는 경우, 반드시 return문이 있어야 한다. 없으면 컴파일 에러발생 (error: missing return statement)
+         */
+    }
 }
