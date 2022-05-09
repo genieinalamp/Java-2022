@@ -11,24 +11,32 @@ public class Exercise6_3 {
         s.no = 1;
         s.kor = 100;
         s.eng = 60;
-        s.math = 79;
+        s.math = 76;
 
         System.out.println("이름:" + s.name);
         System.out.println("수학점수:" + s.math);
-//        System.out.println("총점:" + s.getTotal());
-//        System.out.println("평점:" + s.getAverage());
+        System.out.println("총점:" + s.getTotal());
+        System.out.println("평점:" + s.getAverage());
     }
 }
 
-class Student {
+class Student { // 연습문제 6-1 Student클래스 정의하기.
 
     String name; // 타입 + 변수명, 학생이름
-    int ban; // 반
-    int no; //번호
-    int kor; //국어점수
-    int eng; // 영어점수
-    int math; // 수학점수
+    int ban;     // 반
+    int no;      // 번호
+    int kor;     // 국어점수
+    int eng;     // 영어점수
+    int math;    // 수학점수
 
+    int getTotal() {
+        return kor + eng + math;
+    }
+
+    float getAverage() {
+        return Math.round(getTotal() / 3f * 100)/100f;
+    }
+}
 /*  int getTotal;
     메서드명: getTotal
     기능: 국어 영어 수학의 점수를 모두 더해서 반환한다.
@@ -40,6 +48,4 @@ class Student {
          소수점 둘째자리에서 반올림할 것.
     반환타입: float
     매개변수: 없음
-
 */
-        }

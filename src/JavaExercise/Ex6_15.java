@@ -8,7 +8,7 @@ public class Ex6_15 {
             // 1과 10 사이의 임이의 값을 배열 arr에 저장한다.
             arr[i] = (int)(Math.random()*10) + 1;
         }
-    }
+    } // 클래스 초기화 블럭!!
 
     public static void main(String[] args) {
         for(int i=0; i<arr.length; i++)
