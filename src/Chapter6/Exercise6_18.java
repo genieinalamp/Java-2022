@@ -1,4 +1,4 @@
-package JavaExercise;
+package Chapter6;
 
 public class Exercise6_18 {
 //    boolean isNumber ( String str ) {

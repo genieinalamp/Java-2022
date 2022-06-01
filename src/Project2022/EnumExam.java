@@ -1,4 +1,4 @@
-package JavaExercise;
+package Project2022;
 
 public class EnumExam {
     public static void main(String[] args) {

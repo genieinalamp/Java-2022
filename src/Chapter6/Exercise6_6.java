@@ -1,4 +1,4 @@
-package JavaExercise;
+package Chapter6;
 class MyPoint {
     int x;
     int y;

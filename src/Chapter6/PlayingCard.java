@@ -1,4 +1,4 @@
-package JavaExercise;
+package Chapter6;
 // 6-5 다음의 코드에 정의된 변수들을 종류별로 구분해서 적으시오.
 public class PlayingCard {
     int kind;                    // 인스턴스 변수

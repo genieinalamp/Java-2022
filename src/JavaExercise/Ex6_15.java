@@ -1,10 +1,10 @@
 package JavaExercise;
 
 public class Ex6_15 {
-    static int[] arr = new int[10];
+    static int[] arr = new int[10]; // 길이가 10인 int형 배열생성
 
     static {
-        for(int i=0;i<arr.length;i++) {
+        for(int i=0; i<arr.length; i++) {
             // 1과 10 사이의 임이의 값을 배열 arr에 저장한다.
             arr[i] = (int)(Math.random()*10) + 1;
         }

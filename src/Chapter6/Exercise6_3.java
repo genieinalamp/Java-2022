@@ -1,4 +1,4 @@
-package JavaExercise;
+package Chapter6;
 
 public class Exercise6_3 {
     public static void main(String[] args) {
@@ -14,9 +14,8 @@ public class Exercise6_3 {
         s.math = 76;
 
         System.out.println("이름:" + s.name);
-        System.out.println("수학점수:" + s.math);
         System.out.println("총점:" + s.getTotal());
-        System.out.println("평점:" + s.getAverage());
+        System.out.println("평균:" + s.getAverage());
     }
 }
 
@@ -34,10 +33,12 @@ class Student { // 연습문제 6-1 Student클래스 정의하기.
     }
 
     float getAverage() {
-        return Math.round(getTotal() / 3f * 100)/100f;
+
+        return Math.round(getTotal()*10/3.0)/10f;
     }
 }
-/*  int getTotal;
+/*  Math.round 가장 가까운 int값을 찾는다 (소수면 반올림)
+    int getTotal;
     메서드명: getTotal
     기능: 국어 영어 수학의 점수를 모두 더해서 반환한다.
     반환타입: int

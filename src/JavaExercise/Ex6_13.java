@@ -18,7 +18,7 @@ class Car2 {
     }
 
     Car2(String color, String gearType, int door) {
-        this.color = color;
+        this.color = color;  // 생성자의 매개변수로 선언된 변수의 이름이 인스턴스 변수와 같은 경우에 '인스턴스 변수' 앞에 this를 사용한다.
         this.gearType = gearType;
         this.door = door;
     }

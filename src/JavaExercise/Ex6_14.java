@@ -14,15 +14,15 @@ public class Ex6_14 {
         System.out.println("{ }");        // 인스턴스 초기화 블럭 {}
     }
 
-    public Ex6_14() {
+    public Ex6_14() { // 클래스명 (){} -> 생성자
         System.out.println("생성자");
     }
 
-    public static void main(String[] args) {
-        System.out.println("Ex_14 bt = new Ex6_14(); ");
+    public static void main(String[] args) { // 메인 메서드
+        System.out.println("Ex6_14 bt = new Ex6_14(); 메인메서드 - 개체생성1 ");
         Ex6_14 bt = new Ex6_14();
 
-        System.out.println("Ex6_14 bt2 = new Ex6_14(); ");
+        System.out.println("Ex6_14 bt2 = new Ex6_14(); 메인메서드 - 개체생성2");
         Ex6_14 bt2 = new Ex6_14();
     }
 }

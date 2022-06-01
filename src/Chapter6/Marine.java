@@ -1,4 +1,4 @@
-package JavaExercise;
+package Chapter6;
 /* 연습문제 6-7
 다음은 컴퓨터 게임의 Marine을 클래스로 정의한 것이다. 이 클래스의 멤버중에 static을 붙여야 하는 것은 어떤 것들이고 그 이유는 무엇인가?
 (단, 모든 병사의 공격력과 방어력은 같아야 한다.)

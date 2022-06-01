@@ -1,4 +1,4 @@
-package JavaExercise;
+package Chapter6;
 
 public class Exercise6_17 {
     /* 메서드명 shuffle
