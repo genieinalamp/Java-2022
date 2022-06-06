@@ -27,7 +27,7 @@ class Student1 { // 변수초기화 먼저!
 
     String info () { // info메서드 - 도입부 : 타입+변수명
         String str = name +", " + ban +", " + no +", " + kor +", " + eng +", " + math +", " + (kor+eng+math) +", " + (kor+eng+math)/3.0;
-        return str; // 소수점 부분 다시 보완 ㅜㅜ
+        return str;
     }
 
 }
