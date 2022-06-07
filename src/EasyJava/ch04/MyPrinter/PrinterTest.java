@@ -11,8 +11,8 @@ public class PrinterTest {
         // printer 클래스를 테스트하는 코드
 
         Printer p = new Printer(20, true);
-        p.print(2);
-        p.print(20);
+        p.print(25);
+        p.setDuplex(false);
         p.print(10);
     }
 }
