@@ -9,6 +9,10 @@ public class Printer { // 양면 출력이 가능한 프린터로 수정하되 �
         this.numOfPapers = numOfPapers;
         this.duplex = duplex;
     }
+    public boolean getDuplex() { return duplex; }
+    public void setDuplex(boolean duplex) { // 설정자 생성
+        this.duplex = duplex;
+    }
 //    public int getNumOfPapers() { // 접근자 getter
 //        return numOfPapers;
 //    }
@@ -41,15 +45,7 @@ public class Printer { // 양면 출력이 가능한 프린터로 수정하되 �
                 System.out.println("현재 " + numOfPapers + "장 남아 있습니다. ");
             }
         }
-
-    }
-
-    public boolean getDuplex() { // 접근자 생성
-        return duplex;
-    }
-    public void setDuplex(boolean duplex) { // 설정자 생성
-        this.duplex = duplex;
-    }
-}
+    } // end of method
+} // end of class
 
 
