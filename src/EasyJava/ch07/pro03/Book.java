@@ -1,5 +1,7 @@
 package EasyJava.ch07.pro03;
 
+import java.util.Arrays;
+
 public class Book {
     /*
     가격 순서대로 정렬할 수 있는 Book클래스와 다음 실행 결과가 나타나도록 테스트 프로그램을 작성하라.
@@ -8,5 +10,14 @@ public class Book {
     배열 Books를 정렬하려면 Arrays.sort(books)를 호출하면 된다.
      */
     int price;
+
+    Book(int price){
+        this.price = price;
+    }
+
+    void bookstore ( Book book ) {
+        //int[] books = new books[];
+        //Arrays.sort(books);
+    }
 
 }
