@@ -26,37 +26,90 @@ public class MongNolza { // 몽놀자 방예약 시스템
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int[] room = new int[12]; // 방 12개 생성
-        for ( int i = 1; i<=room.length; i++) {
-            room[i] = i; // 배열 객체생성
-            //System.out.println(room[i]);
+
+        boolean mong = true; // 메뉴 켜짐!
+        int roomnum; // 방번호
+        String answer;
+
+        String[] room = new String[13]; // 방 12개 생성 (0번은 비어있음)
+        String unavailable = "예약 불가";
+        String available = "예약 가능";
+        room[0] = unavailable; // 0번방은 탕비실
+        int i = 1;
+        for (; i < room.length ; i++) {
+            room[i] = available;
         }
 
-        int num; // 메뉴 선택버튼
-        boolean mong = true; // 메뉴 켜짐!
 
-
-        System.out.println("========몽놀자 방예약 시스템 ver.1=======");
+        System.out.println("==========몽놀자 방예약 시스템 ver.1=========");
         while ( mong ) {
             System.out.println("            몽놀자 on!"); // 예약메뉴 보여주기
             System.out.println("");
             System.out.println("");
             System.out.println("");
-            System.out.println("===============[menu]===============");
+            System.out.println("=================[menu]=================");
+
+
+            int num; // 메뉴 선택버튼
+
             System.out.println("1. 예약하기 2. 예약취소 3. 호실보기 99. 종료 ");
             System.out.print("메뉴를 선택하세요 >> ");
+
             num = scan.nextInt();
 
             switch (num) {
+
                 case 1: // 예약하기 - 호실 선택 - 예약가능여부 - 예약진행 - 메뉴복귀
+
+
+                    System.out.printf("예약할 호수를 입력해주세요! : ");
+
+                    roomnum = scan.nextInt();
+
+                    if (room[roomnum].equals(available)  ) {
+                        room[roomnum] = unavailable;
+                        System.out.println(roomnum + "호 예약이 완료되었습니다. ");
+
+                    }
+
+
+                    System.out.println("메뉴로 돌아갑니다. ");
 
                     break;
 
                 case 2: // 예약취소 - 진짜 취소? 수수료 ㅇㅇ - 취소 진행 - 메뉴복귀
 
+                    System.out.printf("예약 취소할 호수를 입력해주세요! : ");
+
+                    roomnum = scan.nextInt();
+
+                    if (room[roomnum].equals(unavailable)) {
+                        System.out.println("진짜로 취소하시겠습니까? 수수료 있음 ㅇㅇ");
+                        System.out.println(" yes / no ");
+                        answer = scan.next();
+                        if (answer.equals("yes")) {
+                            room[roomnum] = available;
+                            System.out.println(roomnum + "호의 예약이 취소되었습니다.");
+                        } else if (answer.equals("no")) {
+                            System.out.println("메뉴로 돌아갑니다. ");
+                        }
+
+                    } else System.out.println("예약이 되어있지 않은 방입니다. 메뉴로 돌아갑니다. ");
+
+
+
                     break;
 
                 case 3: // 호실보기 - 호수 누르고 - 예약됨 or 예약가능
+                    System.out.println();
+                    System.out.println("            ⟪현재 예약 가능한 방 ⟫");
+                    int j=1;
+                    for(; j<room.length; j++){
+                        if ( room[j].equals(available)  )
+                            System.out.print( j + "호 ");
+                    }
+                    System.out.println();
+                    System.out.println();
 
                     break;
 
